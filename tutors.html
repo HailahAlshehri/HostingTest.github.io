@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+  <title>Tutors Page</title>
+  <link rel="stylesheet" type="text/css" href="projectStyleSheet.css">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-size: 2.1vh;
+
+  }
+
+ 
+  .label{
+    color: #5c5470;
+    font-size: large;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    /* padding: 2vh; */
+  }
+ 
+  
+  .tutor-container {
+    display: flex;
+    overflow-x: auto;
+    height: 0%;
+    width: 90%;
+    margin: 4em auto;
+    border-radius: 5px;
+    border-style:groove;
+  }
+  
+  
+  .tutor {
+    flex: 0 0 30vh;
+    background-color: #F6F4FB;
+    color: #5c5470;
+    margin: 5%;
+    text-align: center;   
+    padding : 2% ;
+    border-radius: 5px;
+    box-shadow: 3px 4px 1px #eae1f5;
+  }
+  
+  .tutor img {
+    width: 20vh;
+    height: 19vh;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #5c5470;
+    opacity: 0.8;
+  }
+  
+  .tutor h2 {
+    margin-top: 10px;    
+  }
+
+  .Area{
+    color: grey;
+    font-size: small;
+  }
+  </style>
+</head>
+<body>
+  
+  
+ <header>
+  <img src="images/WebProjectLogo.png" alt="logo image" width=150 height=150>
+  <a href="home.html" accesskey="h" class="logo">Junior Coders</a>
+  <nav class="navigation">
+    <a href="parentDashboard.html" accesskey="p">Parents Dashboard</a>
+                <a href="adminDashboard.html" accesskey="a">Administrator Dashboard</a>
+                <a href="coursePage.html" accesskey="c">Current Courses</a>
+                <a href="tutors.html" accesskey="t">Tutors</a>
+</nav> 
+</header>
+  
+  <div class="label">
+    <h1>Our Tutors</h1>
+    <ul class="breadcrumb">
+      <li><a href="Home.html">Home</a></li>  
+      <li><a href="Tutors.html">tutors</a></li>
+     
+      </ul>
+  </div>
+
+
+  <main>
+
+  
+    <div class="tutor-container">
+   
+
+        <div class="tutor">
+          <img src="images/Screenshot1445-04-08at11.04.16AM.png" alt="Tutor 1">
+          <h2>Ayman Alrashed</h2>
+          <p>Teaching topics:</p>
+          <p class="Area">ML for kids,Robotics for kids</p>
+
+          <p>Teaching Area: </p>
+          <p class="Area">programming</p>
+        </div>
+
+        <div class="tutor">
+          <img src="images/FafFQvdXEAEViGJ.jpg" alt="Tutor 2">
+          <h2>Noura Rashed</h2>
+          <p>Teaching topics:</p>
+          <p class="Area"> Scratch, Python Basics</p>
+          <p>Teaching Area: </p>
+          <p class="Area">game engine ,programming</p>
+        </div>
+
+        <div class="tutor">
+          <img src="images/photo2.webp" alt="Tutor 3">
+          <h2>Esam Alwagait</h2>
+          <p>Teaching topics:</p>
+          <p class="Area">Unity Basics,Scratch</p>
+          <p>Teaching Area: </p>
+          <p class="Area">game engine ,programming</p>
+        </div>
+
+        <div class="tutor">
+          <img src="images/photo.jpeg" alt="Tutor 4">
+          <h2>Abdullah Alswaha</h2>
+          <p>Teaching topics:   </p>
+          <p class="Area">Arduino 101Unity Basics</p>
+          <p>Teaching Area: </p>
+          <p class="Area">Tdata science</p>
+        </div>
+        <div class="tutor">
+          <img src="images/ginella_massa_2.jpg" alt="Tutor 5">
+          <h2>Gada Alnafisah </h2>
+          <p>Teaching topics:</p>
+          <p class="Area"> Python Basics,Scratch</p>
+          <p>Teaching Area: </p>
+          <p class="Area">software programming</p>
+        </div>
+     
+    </div>
+  </main>
+
+
+
+
+
+  <footer>
+    
+        <a href="mailto:help@JuniorCoders.sa"><em>Contact Us <small>(click me)</small></em></a>
+        <p style="margin: 0.75vw; font-size: x-small;">(help@JuniorCoders.sa)</p>
+        <small class="rights">
+            © Junior Coders 2023. All rights reserved.
+        </small>
+    
+    
+  </footer>
+    
+</body>
+</html>

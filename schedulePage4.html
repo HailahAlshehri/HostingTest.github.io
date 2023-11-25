@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+<meta charset="utf-8">
+<title>Schedule</title>
+<link rel = "stylesheet" href = "projectStyleSheet.css">
+<style>
+    html {
+        font-family: Playfair Display, Merriweather;
+        scroll-behavior: smooth;
+        background-color: #F6F4FB;
+    }
+
+h1 { text-align : center ; } 
+
+
+  
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content : center ; 
+} 
+   
+ 
+
+.center { margin-left: auto ; 
+margin-right: auto ;  }
+
+table { border : 1px solid ;  } 
+
+.center:hover {    transform: scale(1.1);}
+table caption { font-family : Playfair Display , Merriweather ; 
+font-weight : bold ; 
+font-size : 2em ; }
+
+thead,tbody { color : white ; 
+background-color :  #424857 ; 
+border : 1px solid ; 
+font-family :  Playfair Display , Merriweather  ; 
+text-align : center ; 
+font-weight : bold ;}
+
+.noWork { color : white ; 
+background-color : gray ; 
+border : 1px solid ; 
+font-family :  Playfair Display , Merriweather ; 
+text-align : center ; 
+font-weight : bold ;}
+
+</style>
+</head>
+
+<body> 
+  <header>
+        <img src="images/WebProjectLogo.png" alt="logo image" width=150 height=150>
+        <a href="home.html" accesskey="h" class="logo">Junior Coders</a>
+        <nav class="navigation">
+            <a href="parentDashboard.html" class="nav-link" accesskey="p">Parents Dashboard</a>
+            <a href="adminDashboard.html" class="nav-link" accesskey="a">Administrator Dashboard</a>
+            <a href="coursePage.html" class="nav-link" accesskey="c">Current Courses</a>
+            <a href="tutors.html" class="nav-link" accesskey="t">Tutors</a>
+        </nav>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </header>
+  <hr> 
+ 
+<ul class="breadcrumb">
+<li><a href="home.html">Home</a></li> 
+<li><a href="adminDashboard.html">Administrator Dashboard</a></li>  
+<li><a href="tutors.html">Tutor name</a></li>
+<li><a href="schedulePage4.html">Schedule</a></li> 
+</ul> 
+<br> 
+<main>
+<table class="center">
+<caption> T. Abdullah Alswaha </caption> 
+<thead>
+<tr> 
+<th> </th>
+<th> Time  </th> 
+<th> Sunday </th> 
+<th> Monday </th> 
+<th> Tuesday </th>
+<th> Wednesday </th> 
+<th> Thursday </th> 
+<th class="noWork"> Friday </th> 
+<th class="noWork"> Saturday </th> 
+</tr>
+</thead>
+<tbody> 
+<tr> 
+<td rowspan="5"> T. Abdullah Alswaha  </td>
+<td>3:00 - <br> 4:00 </td>
+<td> <td> 
+<td> </td> 
+<td> </td>   
+<td> </td>   
+<td class="noWork"> </td> 
+<td class="noWork"> </td> 
+</tr> 
+<tr>
+<td>4:00 - <br> 5:00 </td> 
+<td> </td>   
+<td> </td> 
+<td rowspan="2" colspan="2"> Arduino 101 </td> 
+<td> </td> 
+<td class="noWork"> </td> 
+<td class="noWork"> </td> 
+</tr>
+<tr>
+<td>5:00 - <br> 6:00 </td> 
+<td> </td>   
+<td> </td> 
+<td> </td> 
+<td class="noWork"> </td> 
+<td class="noWork"> </td>
+</tr> 
+<tr> 
+<td>6:00 - <br> 7:00 </td>
+<td> </td>   
+<td colspan="3"> Unity basics </td> 
+<td> </td>  
+<td class="noWork"> </td> 
+<td class="noWork"> </td>
+</tr>
+<tr> 
+<td>7:00 - <br> 8:00</td>
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td>
+<td> </td> 
+<td class="noWork"> </td> 
+<td class="noWork"> </td>
+</tr> 
+</tbody> 
+</table> 
+
+<br>
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br>
+<br> 
+<br> 
+</main>
+
+<footer style="margin-bottom: 0 ; margin-top:10%">
+  
+        <a href="mailto:help@JuniorCoders.sa"><em>Contact Us <small>(click me)</small></em></a>
+        <p style="margin: 0.75vw; font-size: small;">(help@JuniorCoders.sa)</p>
+        <small class="rights">
+            © Junior Coders 2023. All rights reserved.
+        </small>
+    
+  </footer>
+<script>
+            const hamburger = document.querySelector(".hamburger");
+        const navigation = document.querySelector(".navigation");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navigation.classList.remove("active");
+
+        }))
+
+  </script>
+ 
+</body> 
+</html>  

@@ -1,0 +1,303 @@
+<!DOCTYPE html >
+<html lang = 'en'>
+<head> 
+<meta charset="utf-8">
+<title>Parent Dashboard</title> 
+<link rel = "stylesheet" href = "projectStyleSheet.css">
+<style>
+    html {
+        font-family: Playfair Display, Merriweather;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        scroll-behavior: smooth;
+        background-color: #F6F4FB;
+    } 
+ .center { 
+ display: inline;
+    text-align: center;
+	 margin-left: 30%;
+    margin-right:30%; }
+	
+.kid1{
+    display: inline-block;
+    text-align : center ; 
+    background-color: #F6F4FB;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+.kid2{
+    display: inline-block; 
+    text-align : center ; 
+    background-color: #F6F4FB;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+.kid3{
+    display: inline-block;
+    text-align : center ;	
+    background-color: #F6F4FB;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+
+  .kid1:hover{
+    transform: scale(1.1);
+  }
+ .kid2:hover{
+    transform: scale(1.1);
+  }
+  .kid3:hover{
+    transform: scale(1.1);
+  }
+  
+.buttons { 
+
+    display: inline-block;
+    text-align: center;
+	 margin-left: 30%;
+    margin-right:30%; } 
+
+
+.buttons a {  
+ color: white; 
+ align-content:center;} 
+ 
+ .buttons button {   
+  background-color: #424857; 
+  border: 1px inset white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
+  align-items : center ; 
+  align-content:center;
+}
+
+.buttons button:not(:last-child) {
+  border-right: none; 
+}
+
+.buttons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.buttons button:hover {
+  background-color: #22262e;
+}
+.B1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  align-content: center ; 
+}
+
+.B1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.B2 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  align-content: center ;
+}
+
+.B2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.B3 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  align-content: center ;
+}
+
+.B3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+</style> 
+</head> 
+
+<body>   
+<header>
+        <img src="images/WebProjectLogo.png" alt="logo image" width=150 height=150>
+        <a href="home.html" accesskey="h" class="logo">Junior Coders</a>
+        <nav class="navigation">
+            <a href="parentDashboard.html" class="nav-link" accesskey="p">Parents Dashboard</a>
+            <a href="adminDashboard.html" class="nav-link" accesskey="a">Administrator Dashboard</a>
+            <a href="coursePage.html" class="nav-link" accesskey="c">Current Courses</a>
+            <a href="tutors.html" class="nav-link" accesskey="t">Tutors</a>
+        </nav>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </header>
+<hr>  
+<img class="mainPic" src="images/parentDashboardPic.jpg" alt="kids learning picture" width=1500 height=750 >
+<hr> 
+<ul class="breadcrumb">
+<li><a href="home.html">Home</a></li> 
+<li><a href="parentDashboard.html">Parent Dashboard</a></li>
+</ul> 
+<hr>
+<main> 
+<div class="center">   
+    <div class="inline">
+        <div class="kids">
+            <div class="kid1">
+                <img id="kid1Pic" src="images/kid3.jpg" alt="Lama Saad's picture" width=150 height=150>
+                <h3 id="kid1name"> Lama Saad </h3>
+            </div>
+            <div class="kid2">
+                <img id="kid2Pic" src="images/kid4.jpg" alt="Roynah Saad's picture" width=150 height=150>
+                <h3 id="kid3name"> Roynah Saad </h3>
+            </div>
+            <div class="kid3">
+                <img id="kid3Pic" src="images/kid6.jpg" alt="Waleed Saad's picture" width=150 height=150>
+                <h3 id="kid3name"> Waleed Saad </h3>
+            </div>
+        </div>
+    </div>
+
+ 
+<div class="buttons"> 
+<button class="B1"><a href="newKidEnrollmentPage2.html"> Register a new kid </a></button>
+<button class="B2"><a href="courseEnrolment.html"> Course Enrollment </a></button>
+<button class="B3"><a href="eval.html"> Course Evaluation </a></button>
+</div>
+
+</div>  
+</main>  
+
+<footer style="margin-bottom: 0 ; margin-top:10%">
+  
+        <a href="mailto:help@JuniorCoders.sa"><em>Contact Us <small>(click me)</small></em></a>
+        <p style="margin: 0.75vw; font-size: small;">(help@JuniorCoders.sa)</p>
+        <small class="rights">
+            © Junior Coders 2023. All rights reserved.
+        </small>
+    
+  </footer>
+<script>
+            const hamburger = document.querySelector(".hamburger");
+        const navigation = document.querySelector(".navigation");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navigation.classList.remove("active");
+
+        }))
+
+        function checkLocalStorage() {
+            var childrenNames = localStorage.getItem('FirstName');
+            if (!childrenNames) {
+                var defaultNames = ['Roynah Saad', 'Waleed Saad'];
+                localStorage.setItem('childrenNames', JSON.stringify(defaultNames));
+                displayChildrenNames(defaultNames);
+            } else {
+                var names = JSON.parse(childrenNames);
+                displayChildrenNames(names);
+            }
+        }
+
+   function displayChildrenNames(names) {
+        var parentsListItems = document.querySelectorAll('.inline .kids');
+
+        // Set names for the first two children explicitly
+        var nameElements = document.querySelectorAll('.inline .kids h3');
+        nameElements[0].textContent = names[0];
+        nameElements[1].textContent = names[1];
+
+        for (var i = 2; i < parentsListItems.length; i++) {
+            parentsListItems[i].style.display = 'none';
+        }
+    }
+    storeChildren(); 
+/*
+    function displayChildrenNames(Lnames) {
+        var parentsListItems = document.querySelectorAll('.parents-list .parents-item');
+
+        // Set names for the first two children explicitly
+        var nameElements = document.querySelectorAll('.parents-list .parents-item p');
+        nameElements[0].textContent = names[0];
+        nameElements[1].textContent = names[1];
+
+        for (var i = 2; i < parentsListItems.length; i++) {
+            parentsListItems[i].style.display = 'none';
+        }
+    }
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*'childName'
+
+
+
+
+
+        if (localStorage == null) {
+            let kid1 = document.getElementsByClassName("kid1").innerHTML;
+            let kid2 = document.getElementsByClassName("kid6").innerHTML;
+            localStorage.setItem("kid1", kid1);
+            localStorage.setItem("kid2", kid2);
+            localStorage.getItem("kid1");
+            localStorage.getItem("kid2");
+
+        }
+        else {
+            localStorage.getItem("Kids'Picture");
+            localStorage.getItem("FirstName");
+            localStorage.getItem("LastName");
+
+        }
+    } ,*/
+
+  </script>
+
+</body>
+</html>
+
+
+
+ 
+
+
+
